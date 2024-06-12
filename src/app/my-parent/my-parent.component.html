@@ -1,0 +1,8 @@
+<div>
+    <h2>Parent Component</h2>
+    <input type="text" (keyup.enter)="show($event)" />
+  </div>
+  <hr />
+  Parent Signal: {{ name() }}
+  <app-my-child [receiveData]="name()" [objData]="names"></app-my-child>
+  
